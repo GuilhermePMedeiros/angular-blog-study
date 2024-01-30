@@ -24,5 +24,5 @@ Application developed in Angular that consumes news from the IBGE API and redire
   <img src="https://github.com/GuilhermePMedeiros/angular-blog-study/assets/74070432/54245390-0470-4fbe-81be-9fa050e87bfc">
 </div>
 
-#Sources
+# Sources
 https://servicodados.ibge.gov.br/api/docs/noticias?versao=3
