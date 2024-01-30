@@ -1,0 +1,32 @@
+.container{
+    padding-block: 10px;
+    padding-inline: 26px;
+}
+
+.article{
+
+}
+
+.article-main{
+    h2{
+        margin-block: 5px;
+    }
+}
+
+.article-secundary{
+    margin-top: 30px;
+}
+
+.article-secundary-title{
+    display: flex;
+    align-items: center;
+}
+
+.best-sellers-list{
+
+}
+
+.list-title{
+    display: flex;
+    align-items: center;
+}
