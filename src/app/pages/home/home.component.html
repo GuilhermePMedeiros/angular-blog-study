@@ -1,11 +1,11 @@
 <div class="container">
     <div class="article">
         <div class="article-main">
-            <h2>TODAY</h2>
+            <h2>Main news</h2>
             <app-big-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum ... '">
+                [title]="principalNews.titulo"
+                [description]="principalNews.introducao"
+                [urlLink]="principalNews.link">
             </app-big-card>
         </div>
         <div class="article-secundary">
@@ -14,60 +14,28 @@
                 <app-button-link [title]="'More'"></app-button-link>
             </div>
 
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
+            <div *ngFor="let news of newsList; let i = index">
+                <app-small-card 
+                    [title]="news.titulo"
+                    [description]="news.introducao"
+                    [urlLink]="news.link">
+                 </app-small-card>
+            </div>
         </div>
     </div>
     <div class="best-sellers-list">
         <div class="list-title">
-            <h2>Best Sellers</h2>
+            <h2>Release news</h2>
             <app-button-link [title]="'More'"></app-button-link>
         </div>
         <div class="list">
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
-
-            <app-small-card 
-                [imagePath]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'"
-                [title]="'Title Lorem'"
-                [description]="'Lorem ipsum dolor sit amet, conse...'">
-            </app-small-card>
+            <div *ngFor="let news of releaseList; let i = index">
+                <app-small-card 
+                    [title]="news.titulo"
+                    [description]="news.introducao"
+                    [urlLink]="news.link">
+                 </app-small-card>
+            </div>
         </div>  
     </div>
 </div>

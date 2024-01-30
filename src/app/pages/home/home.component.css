@@ -4,7 +4,8 @@
 }
 
 .article{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .article-main{
