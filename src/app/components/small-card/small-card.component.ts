@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SmallCardComponent implements OnInit {
 
   @Input()
-  imagePath : string = "";
+  imagePath : string = "../../../assets/images/newspaper.png";
   
   @Input()
   title : string = "";
@@ -16,9 +16,20 @@ export class SmallCardComponent implements OnInit {
   @Input()
   description : string = "";
 
+  @Input()
+  urlLink : string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openLink(url:string){
+      if (url !== undefined && url.length > 0 ){
+        window.open(url, "_blank");
+      } else {
+        alert('link unavailable');
+      }
   }
 
 }
