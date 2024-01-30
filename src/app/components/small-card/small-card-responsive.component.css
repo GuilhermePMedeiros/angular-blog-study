@@ -1,0 +1,13 @@
+@media screen and (min-width: 700px) {
+  .card-container{
+    width: 45vw;
+    height: 105px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-container{
+    width: 25vw;
+    height: 105px;
+  }
+}

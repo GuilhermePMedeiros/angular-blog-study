@@ -1,0 +1,25 @@
+.menu-container{
+
+}
+
+.menu-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 90px;
+}
+
+.menu-secondary{
+    height: 30px;
+    background-color: #343434;
+}
+
+.menu-main-icon {
+
+}
+
+.menu-main-title{
+    font-size: 24px;
+}

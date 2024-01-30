@@ -1,0 +1,16 @@
+@media screen and (min-width: 700px) {
+    .card-container{
+        width: 40vw;
+        height: 470px;
+    
+        border: solid 1px #D0D0D0;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card-container{
+        width: 25vw;
+        height: 470px;
+    }
+}

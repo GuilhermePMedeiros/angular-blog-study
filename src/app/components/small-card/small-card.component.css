@@ -1,0 +1,31 @@
+.card-container{
+    width: 85vw;
+    height: 105px;
+
+    border: solid 1px #D0D0D0;
+    border-radius: 25px;
+
+    display: flex;
+    margin-block: 15px;
+}
+
+.card-image img{
+    width: 112px;
+    height: 105px;
+    border-radius: 25px 0px 0px 0px;
+}
+
+.card-title{
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+
+    margin-inline: 10px;
+    justify-content: center;
+}
+
+.card-description{
+
+}
