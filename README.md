@@ -1,5 +1,7 @@
 # AngularBlogStudy - Open Letter
 
+Application developed in Angular that consumes news from the IBGE API and redirects the user to the portal
+
 ## Mobile
 <div align="center">
   <img src="https://github.com/GuilhermePMedeiros/angular-blog-study/assets/74070432/517fe32f-c4e9-4b64-85d7-563dd0275bea">
@@ -21,3 +23,6 @@
 <div align="center">
   <img src="https://github.com/GuilhermePMedeiros/angular-blog-study/assets/74070432/54245390-0470-4fbe-81be-9fa050e87bfc">
 </div>
+
+#Sources
+https://servicodados.ibge.gov.br/api/docs/noticias?versao=3
